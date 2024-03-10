@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e944101661.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tribute page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Virat Kohli</h1>
+        <p> 2008(Still Playing)</p>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="kholi1.jpg" alt="">
+        </div>
+        <div class="text">
+            <p>I love playing under pressure. <br> In fact, if there's no pressure, <br>
+                then i'm not in the perfec zone..</p>
+        </div>
+
+    </section>
+
+    <section class="biography">
+        <div class="left">
+            <div class="biography-img">
+                <i class="fa-solid fa-play"></i>
+                <img src="kohli.jpg" alt="">
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="goback.jpg" class="close" alt="">
+            <video src="Virat_Kohli___Believer__Imagine_Dragons____Batting_Skills___HD(720p).mp4" controls></video>
+        </div>
+        <div class="right">
+            <div class="biography-text">
+                <h1>Biography</h1>
+                <p>"Virat Kohli (born 5 November 1988) is an Indian international cricketer and the former captain of the Indian national cricket team. He is a right-handed batsman and an occasional medium-fast bowler. He currently represents Royal Challengers Bangalore in the IPL and Delhi in domestic cricket. Kohli is widely regarded as one of the greatest batsmen in the history of cricket and the best of the 21st century.He holds the record as the highest run-scorer in T20I and IPL, ranks third in ODI, and stands as the fourth-highest in international cricket.He also holds the record for scoring the most centuries in ODI cricket and stands second in the list of most international centuries scored. Kohli was a member of the Indian team that won the 2011 Cricket World Cup, 2013 ICC Champions Trophy, and captained India to win the ICC Test mace three consecutive times in 2017, 2018, and 2019.".</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h6>Made by Ganesh</h6>
+    </footer>
+</body>
+<script>
+    let bio = document.querySelector('.biography-img');
+    let video = document.querySelector('.video-container');
+    let close = document.querySelector('.close');
+
+    bio.addEventListener('click', () => {
+        video.style.display = 'flex';
+    });
+
+    close.addEventListener('click', () => {
+        video.style.display = 'none';
+    })
+</script>
+
+</html>
